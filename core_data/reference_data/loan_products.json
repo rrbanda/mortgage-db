@@ -1,0 +1,75 @@
+[
+  {
+    "product_id": "CONV_30_FIXED",
+    "product_name": "Conventional 30-Year Fixed",
+    "loan_type": "conventional",
+    "term_months": 360,
+    "minimum_credit_score": 620,
+    "maximum_ltv": 0.95,
+    "minimum_down_payment": 0.05,
+    "requires_mortgage_insurance": true,
+    "base_interest_rate": 7.25,
+    "description": "Standard conventional 30-year fixed rate mortgage"
+  },
+  {
+    "product_id": "CONV_15_FIXED", 
+    "product_name": "Conventional 15-Year Fixed",
+    "loan_type": "conventional",
+    "term_months": 180,
+    "minimum_credit_score": 640,
+    "maximum_ltv": 0.90,
+    "minimum_down_payment": 0.10,
+    "requires_mortgage_insurance": true,
+    "base_interest_rate": 6.75,
+    "description": "Conventional 15-year fixed rate mortgage with lower interest rate"
+  },
+  {
+    "product_id": "FHA_30_FIXED",
+    "product_name": "FHA 30-Year Fixed",
+    "loan_type": "fha",
+    "term_months": 360,
+    "minimum_credit_score": 580,
+    "maximum_ltv": 0.965,
+    "minimum_down_payment": 0.035,
+    "requires_mortgage_insurance": true,
+    "base_interest_rate": 7.15,
+    "description": "FHA-insured 30-year fixed rate mortgage for first-time buyers"
+  },
+  {
+    "product_id": "VA_30_FIXED",
+    "product_name": "VA 30-Year Fixed", 
+    "loan_type": "va",
+    "term_months": 360,
+    "minimum_credit_score": 580,
+    "maximum_ltv": 1.0,
+    "minimum_down_payment": 0.0,
+    "requires_mortgage_insurance": false,
+    "base_interest_rate": 6.95,
+    "description": "VA-guaranteed mortgage for eligible veterans and service members"
+  },
+  {
+    "product_id": "USDA_30_FIXED",
+    "product_name": "USDA Rural 30-Year Fixed",
+    "loan_type": "usda", 
+    "term_months": 360,
+    "minimum_credit_score": 640,
+    "maximum_ltv": 1.0,
+    "minimum_down_payment": 0.0,
+    "requires_mortgage_insurance": true,
+    "base_interest_rate": 6.85,
+    "description": "USDA-guaranteed mortgage for rural and suburban areas"
+  },
+  {
+    "product_id": "JUMBO_30_FIXED",
+    "product_name": "Jumbo 30-Year Fixed",
+    "loan_type": "jumbo",
+    "term_months": 360,
+    "minimum_credit_score": 700,
+    "maximum_ltv": 0.80,
+    "minimum_down_payment": 0.20,
+    "requires_mortgage_insurance": false,
+    "base_interest_rate": 7.45,
+    "description": "High-balance mortgage exceeding conforming loan limits"
+  }
+]
+

@@ -1,0 +1,155 @@
+# Mortgage Database Configuration
+# Copy this file to config.yaml and adjust settings for your environment
+
+# Environment settings
+environment: local  # local, development, staging, production
+
+# Neo4j Database Configuration
+database:
+  neo4j:
+    # Connection settings
+    uri: "bolt://localhost:7687"
+    user: "neo4j"
+    password: "your-password-here"
+    database: "mortgage_db"
+    
+    # Connection pool settings
+    max_connection_lifetime: 3600  # seconds
+    max_connection_pool_size: 50
+    connection_acquisition_timeout: 60  # seconds
+    
+    # Transaction settings
+    default_transaction_timeout: 30  # seconds
+    
+  # Deployment-specific settings
+  deployment:
+    local:
+      uri: "bolt://localhost:7687"
+      user: "neo4j"
+      password: "local-password"
+      
+    podman:
+      uri: "bolt://neo4j-container:7687"
+      user: "neo4j"
+      password: "container-password"
+      
+    openshift:
+      uri: "bolt://neo4j-service:7687"
+      user: "neo4j"
+      password_secret: "neo4j-password"  # Reference to OpenShift secret
+
+# Application settings
+application:
+  name: "Mortgage Database System"
+  version: "0.1.0"
+  debug: false
+  
+  # Data processing settings
+  batch_size: 1000
+  max_retries: 3
+  retry_delay: 5  # seconds
+  
+  # File processing
+  upload_max_size: 10485760  # 10MB
+  supported_formats: ["json", "csv", "xml"]
+
+# Business Rules Configuration
+business_rules:
+  # Rule execution settings
+  parallel_execution: true
+  max_workers: 4
+  timeout_per_rule: 30  # seconds
+  
+  # Rule categories
+  categories:
+    - application_intake
+    - income_calculation
+    - property_appraisal
+    - underwriting
+    - compliance
+    - document_verification
+    - rate_pricing
+
+# Logging configuration
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "structured"  # json, structured, simple
+  
+  # Log outputs
+  console:
+    enabled: true
+    level: INFO
+    
+  file:
+    enabled: true
+    level: DEBUG
+    path: "logs/mortgage-db.log"
+    max_size: "10MB"
+    backup_count: 5
+    
+  # External logging (optional)
+  syslog:
+    enabled: false
+    host: "localhost"
+    port: 514
+
+# Monitoring and metrics
+monitoring:
+  # Prometheus metrics
+  prometheus:
+    enabled: false
+    port: 8000
+    path: "/metrics"
+    
+  # Health checks
+  health_checks:
+    enabled: true
+    interval: 60  # seconds
+    
+  # Performance monitoring
+  performance:
+    query_logging: false
+    slow_query_threshold: 1000  # milliseconds
+
+# Security settings
+security:
+  # Encryption settings
+  encrypt_sensitive_data: true
+  encryption_key_env: "MORTGAGE_DB_ENCRYPTION_KEY"
+  
+  # Access control
+  require_authentication: true
+  session_timeout: 3600  # seconds
+  
+  # Audit logging
+  audit:
+    enabled: true
+    log_queries: true
+    log_data_access: true
+
+# Data management
+data_management:
+  # Backup settings
+  backup:
+    enabled: true
+    schedule: "0 2 * * *"  # Daily at 2 AM
+    retention_days: 30
+    location: "./backup/"
+    
+  # Data validation
+  validation:
+    strict_mode: true
+    validate_on_load: true
+    
+  # Data retention
+  retention:
+    application_data: 2555  # 7 years in days
+    audit_logs: 2555
+    system_logs: 90
+
+# CLI settings
+cli:
+  default_output_format: "table"  # table, json, csv
+  paging_enabled: true
+  color_output: true
+  confirmation_required: true  # For destructive operations

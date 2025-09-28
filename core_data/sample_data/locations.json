@@ -1,0 +1,222 @@
+[
+  {
+    "location_id": "LOC_94102",
+    "zip_code": "94102",
+    "city": "San Francisco",
+    "county": "San Francisco",
+    "state": "CA",
+    "latitude": 81.6448255,
+    "longitude": -120.229585,
+    "created_at": "2025-09-28T18:07:44.755535"
+  },
+  {
+    "location_id": "LOC_94105",
+    "zip_code": "94105",
+    "city": "San Francisco",
+    "county": "San Francisco",
+    "state": "CA",
+    "latitude": -83.286227,
+    "longitude": -32.344758,
+    "created_at": "2025-09-28T18:07:44.755726"
+  },
+  {
+    "location_id": "LOC_10001",
+    "zip_code": "10001",
+    "city": "New York",
+    "county": "New York",
+    "state": "NY",
+    "latitude": -24.262343,
+    "longitude": -60.164645,
+    "created_at": "2025-09-28T18:07:44.755732"
+  },
+  {
+    "location_id": "LOC_10002",
+    "zip_code": "10002",
+    "city": "New York",
+    "county": "New York",
+    "state": "NY",
+    "latitude": -52.5430735,
+    "longitude": -124.973324,
+    "created_at": "2025-09-28T18:07:44.755738"
+  },
+  {
+    "location_id": "LOC_90210",
+    "zip_code": "90210",
+    "city": "Los Angeles",
+    "county": "Los Angeles",
+    "state": "CA",
+    "latitude": 56.395715,
+    "longitude": -133.325072,
+    "created_at": "2025-09-28T18:07:44.755743"
+  },
+  {
+    "location_id": "LOC_90211",
+    "zip_code": "90211",
+    "city": "Los Angeles",
+    "county": "Los Angeles",
+    "state": "CA",
+    "latitude": 68.5091265,
+    "longitude": 46.517555,
+    "created_at": "2025-09-28T18:07:44.755748"
+  },
+  {
+    "location_id": "LOC_60601",
+    "zip_code": "60601",
+    "city": "Chicago",
+    "county": "Cook",
+    "state": "IL",
+    "latitude": -81.468401,
+    "longitude": -164.002739,
+    "created_at": "2025-09-28T18:07:44.755753"
+  },
+  {
+    "location_id": "LOC_60602",
+    "zip_code": "60602",
+    "city": "Chicago",
+    "county": "Cook",
+    "state": "IL",
+    "latitude": -64.8488745,
+    "longitude": -62.619631,
+    "created_at": "2025-09-28T18:07:44.755758"
+  },
+  {
+    "location_id": "LOC_77001",
+    "zip_code": "77001",
+    "city": "Houston",
+    "county": "Harris",
+    "state": "TX",
+    "latitude": -27.5455665,
+    "longitude": 91.310554,
+    "created_at": "2025-09-28T18:07:44.755763"
+  },
+  {
+    "location_id": "LOC_77002",
+    "zip_code": "77002",
+    "city": "Houston",
+    "county": "Harris",
+    "state": "TX",
+    "latitude": 71.603172,
+    "longitude": -165.75361,
+    "created_at": "2025-09-28T18:07:44.755806"
+  },
+  {
+    "location_id": "LOC_75001",
+    "zip_code": "75001",
+    "city": "Dallas",
+    "county": "Dallas",
+    "state": "TX",
+    "latitude": 60.658074,
+    "longitude": -73.249851,
+    "created_at": "2025-09-28T18:07:44.755811"
+  },
+  {
+    "location_id": "LOC_75002",
+    "zip_code": "75002",
+    "city": "Dallas",
+    "county": "Dallas",
+    "state": "TX",
+    "latitude": 84.4520245,
+    "longitude": 112.56323,
+    "created_at": "2025-09-28T18:07:44.755816"
+  },
+  {
+    "location_id": "LOC_85001",
+    "zip_code": "85001",
+    "city": "Phoenix",
+    "county": "Maricopa",
+    "state": "AZ",
+    "latitude": 22.613994,
+    "longitude": -61.651844,
+    "created_at": "2025-09-28T18:07:44.755821"
+  },
+  {
+    "location_id": "LOC_85002",
+    "zip_code": "85002",
+    "city": "Phoenix",
+    "county": "Maricopa",
+    "state": "AZ",
+    "latitude": 30.5836345,
+    "longitude": 136.359605,
+    "created_at": "2025-09-28T18:07:44.755826"
+  },
+  {
+    "location_id": "LOC_30301",
+    "zip_code": "30301",
+    "city": "Atlanta",
+    "county": "Fulton",
+    "state": "GA",
+    "latitude": -15.323751,
+    "longitude": -176.511005,
+    "created_at": "2025-09-28T18:07:44.755831"
+  },
+  {
+    "location_id": "LOC_30302",
+    "zip_code": "30302",
+    "city": "Atlanta",
+    "county": "Fulton",
+    "state": "GA",
+    "latitude": -47.14178,
+    "longitude": 46.889378,
+    "created_at": "2025-09-28T18:07:44.755836"
+  },
+  {
+    "location_id": "LOC_80202",
+    "zip_code": "80202",
+    "city": "Denver",
+    "county": "Denver",
+    "state": "CO",
+    "latitude": 1.335303,
+    "longitude": -30.818959,
+    "created_at": "2025-09-28T18:07:44.755841"
+  },
+  {
+    "location_id": "LOC_80203",
+    "zip_code": "80203",
+    "city": "Denver",
+    "county": "Denver",
+    "state": "CO",
+    "latitude": -48.263789,
+    "longitude": -64.404305,
+    "created_at": "2025-09-28T18:07:44.755846"
+  },
+  {
+    "location_id": "LOC_33101",
+    "zip_code": "33101",
+    "city": "Miami",
+    "county": "Miami-Dade",
+    "state": "FL",
+    "latitude": 0.3539115,
+    "longitude": -125.126275,
+    "created_at": "2025-09-28T18:07:44.755851"
+  },
+  {
+    "location_id": "LOC_33102",
+    "zip_code": "33102",
+    "city": "Miami",
+    "county": "Miami-Dade",
+    "state": "FL",
+    "latitude": -65.103727,
+    "longitude": 23.971919,
+    "created_at": "2025-09-28T18:07:44.755856"
+  },
+  {
+    "location_id": "LOC_98101",
+    "zip_code": "98101",
+    "city": "Seattle",
+    "county": "King",
+    "state": "WA",
+    "latitude": -64.037895,
+    "longitude": 12.725585,
+    "created_at": "2025-09-28T18:07:44.755861"
+  },
+  {
+    "location_id": "LOC_98102",
+    "zip_code": "98102",
+    "city": "Seattle",
+    "county": "King",
+    "state": "WA",
+    "latitude": 2.329911,
+    "longitude": 144.122944,
+    "created_at": "2025-09-28T18:07:44.755868"
+  }
+]

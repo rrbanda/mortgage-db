@@ -1,0 +1,156 @@
+[
+  {
+    "state": "CA",
+    "state_name": "California",
+    "markets": [
+      {
+        "market_name": "San Francisco Bay Area",
+        "market_tier": "high_cost", 
+        "conforming_loan_limit": 1089300,
+        "median_home_price": 1200000,
+        "counties": ["San Francisco", "Alameda", "Contra Costa", "San Mateo", "Santa Clara"],
+        "zip_codes": ["94102", "94105", "94107", "94301", "95014"],
+        "market_characteristics": ["tech_hub", "high_appreciation", "competitive_market"]
+      },
+      {
+        "market_name": "Los Angeles Metro",
+        "market_tier": "high_cost",
+        "conforming_loan_limit": 1089300, 
+        "median_home_price": 850000,
+        "counties": ["Los Angeles", "Orange", "Riverside", "San Bernardino"],
+        "zip_codes": ["90210", "90211", "90404", "92660", "92694"],
+        "market_characteristics": ["entertainment_industry", "diverse_economy", "traffic_congestion"]
+      }
+    ]
+  },
+  {
+    "state": "NY", 
+    "state_name": "New York",
+    "markets": [
+      {
+        "market_name": "New York City Metro",
+        "market_tier": "high_cost",
+        "conforming_loan_limit": 1089300,
+        "median_home_price": 750000,
+        "counties": ["New York", "Kings", "Queens", "Bronx", "Richmond"],
+        "zip_codes": ["10001", "10002", "10025", "11201", "11375"],
+        "market_characteristics": ["financial_center", "co_op_condos", "high_property_taxes"]
+      }
+    ]
+  },
+  {
+    "state": "TX",
+    "state_name": "Texas",
+    "markets": [
+      {
+        "market_name": "Dallas-Fort Worth",
+        "market_tier": "standard_cost", 
+        "conforming_loan_limit": 766550,
+        "median_home_price": 420000,
+        "counties": ["Dallas", "Tarrant", "Collin", "Denton"],
+        "zip_codes": ["75001", "75002", "76107", "75034"], 
+        "market_characteristics": ["oil_tech_economy", "new_construction", "job_growth"]
+      },
+      {
+        "market_name": "Houston Metro",
+        "market_tier": "standard_cost",
+        "conforming_loan_limit": 766550,
+        "median_home_price": 380000,
+        "counties": ["Harris", "Fort Bend", "Montgomery", "Brazoria"],
+        "zip_codes": ["77001", "77002", "77459", "77494"],
+        "market_characteristics": ["energy_sector", "affordability", "flood_risk"]
+      }
+    ]
+  },
+  {
+    "state": "IL",
+    "state_name": "Illinois", 
+    "markets": [
+      {
+        "market_name": "Chicago Metro",
+        "market_tier": "standard_cost",
+        "conforming_loan_limit": 766550,
+        "median_home_price": 320000,
+        "counties": ["Cook", "DuPage", "Lake", "Will"],
+        "zip_codes": ["60601", "60602", "60614", "60035"],
+        "market_characteristics": ["financial_center", "harsh_winters", "property_taxes"]
+      }
+    ]
+  },
+  {
+    "state": "FL",
+    "state_name": "Florida",
+    "markets": [
+      {
+        "market_name": "Miami-Dade", 
+        "market_tier": "high_cost",
+        "conforming_loan_limit": 766550,
+        "median_home_price": 550000,
+        "counties": ["Miami-Dade"],
+        "zip_codes": ["33101", "33102", "33139", "33154"],
+        "market_characteristics": ["international_buyers", "hurricane_risk", "no_state_tax"]
+      }
+    ]
+  },
+  {
+    "state": "WA",
+    "state_name": "Washington",
+    "markets": [
+      {
+        "market_name": "Seattle Metro",
+        "market_tier": "high_cost",
+        "conforming_loan_limit": 1089300,
+        "median_home_price": 780000, 
+        "counties": ["King", "Snohomish", "Pierce"],
+        "zip_codes": ["98101", "98102", "98004", "98052"],
+        "market_characteristics": ["tech_industry", "rain_climate", "no_state_tax"]
+      }
+    ]
+  },
+  {
+    "state": "CO",
+    "state_name": "Colorado",
+    "markets": [
+      {
+        "market_name": "Denver Metro",
+        "market_tier": "standard_cost", 
+        "conforming_loan_limit": 766550,
+        "median_home_price": 480000,
+        "counties": ["Denver", "Jefferson", "Adams", "Arapahoe"],
+        "zip_codes": ["80202", "80203", "80209", "80014"],
+        "market_characteristics": ["outdoor_lifestyle", "tech_growth", "altitude_living"]
+      }
+    ]
+  },
+  {
+    "state": "AZ",
+    "state_name": "Arizona", 
+    "markets": [
+      {
+        "market_name": "Phoenix Metro",
+        "market_tier": "standard_cost",
+        "conforming_loan_limit": 766550,
+        "median_home_price": 450000,
+        "counties": ["Maricopa", "Pinal"],
+        "zip_codes": ["85001", "85002", "85015", "85028"],
+        "market_characteristics": ["retirement_destination", "hot_climate", "water_concerns"]
+      }
+    ]
+  },
+  {
+    "state": "GA",
+    "state_name": "Georgia",
+    "markets": [
+      {
+        "market_name": "Atlanta Metro", 
+        "market_tier": "standard_cost",
+        "conforming_loan_limit": 766550,
+        "median_home_price": 360000,
+        "counties": ["Fulton", "DeKalb", "Gwinnett", "Cobb"],
+        "zip_codes": ["30301", "30302", "30309", "30309"],
+        "market_characteristics": ["business_hub", "affordable_housing", "growing_population"]
+      }
+    ]
+  }
+]
+
