@@ -21,6 +21,10 @@ RETURN app.application_id, "income_insufficient" as reason
 
 This type of multi-entity reasoning is natural in Cypher but requires complex JOINs in SQL.
 
+**Visual Example - Core Mortgage Application Flow:**
+![Core Mortgage Application Flow](images/1KG.png)
+*Real graph visualization showing Person → Application → Document relationships. Each connection represents a business requirement that can be traversed in a single query, demonstrating the natural mapping between mortgage business logic and graph structure.*
+
 #### 2. **Dynamic Rule Application**
 Business rules often apply based on relationship patterns:
 
@@ -65,6 +69,10 @@ MATCH (app)-[:ELIGIBLE_FOR]->(program:LoanProgram)
 WHERE person.credit_score >= 740 AND app.down_payment_percentage >= 0.20
 CREATE (person)-[:QUALIFIES_FOR {confidence: "high", reason: "pattern_match"}]->(program)
 ```
+
+**Visual Example - Borrower Profile Matching:**
+![Borrower Profile Matching](images/3KG.png)
+*Graph visualization showing how people are automatically matched to borrower profiles (FirstTimeBuyer, Military, HighIncomeStrongCredit, etc.) and connected to their mortgage applications. This categorization enables targeted loan program recommendations and risk assessment.*
 
 ### **Real Results from Our Working System**
 
@@ -118,6 +126,10 @@ Rebecca Carlson    | FHA     |    730 | medium     | good_credit
 Nathaniel Williams | VA      |    728 | medium     | good_credit
 Nathaniel Williams | FHA     |    728 | medium     | good_credit
 ```
+
+**Visual Example - Knowledge Graph Intelligence:**
+![Credit Qualification Intelligence](images/2KG.png)
+*Live graph showing intelligent QUALIFIES_FOR relationships created by the knowledge graph. Notice the confidence levels and reasoning attached to each relationship - this is semantic intelligence that emerges from credit score analysis, not simple data storage.*
 
 **Summary of Graph Database Value:**
 - ✅ **1,500+ relationships** connecting 1,000+ entities in meaningful patterns
@@ -496,6 +508,10 @@ RETURN person.person_id, collect(location.risk_indicators) as area_risks
 ```
 This single query replaces multiple JOIN operations and is index-free adjacent (constant time per hop).
 
+**Visual Example - Geographic Distribution Network:**
+![Geographic Distribution](images/5KG.png)
+*Graph showing how entities (Properties, People, Companies) are distributed across geographic locations. This network enables location-based risk assessment, market analysis, and regulatory compliance checking across different jurisdictions.*
+
 **Pattern-Based Validation**
 ```cypher
 // Validate employment stability across applications
@@ -505,6 +521,10 @@ WITH person, company, count(apps) as app_count
 WHERE company.years_in_business < 2 AND app_count > 1
 RETURN person.person_id as flagged_applicant
 ```
+
+**Visual Example - Business Rules Network:**
+![Business Rules Network](images/4KG.png)
+*Graph visualization showing how Applications are connected to Business Rules they must satisfy. Each SUBJECT_TO relationship represents an active business rule that applies to that application, enabling dynamic rule application and compliance tracking.*
 
 **Schema-Free Evolution**
 New mortgage product types, document requirements, or compliance rules can be added without altering existing data structure or requiring migrations.
@@ -606,6 +626,10 @@ JOIN properties pr ON a.property_id = pr.property_id
 JOIN locations l ON pr.location_id = l.location_id
 WHERE c.stability_rating < 3 AND l.market_trend = 'declining'
 ```
+
+**Visual Example - Complete System Architecture:**
+![Complete System Architecture](images/6KG.png)
+*Comprehensive view of the mortgage graph database showing the interconnected nature of all entities. This demonstrates how Person, Application, Property, Company, Location, and Business Rule nodes form a cohesive knowledge network that enables sophisticated mortgage processing intelligence.*
 
 #### **Regulatory Adaptability**
 When mortgage regulations change, graph databases accommodate new requirements without structural changes:
